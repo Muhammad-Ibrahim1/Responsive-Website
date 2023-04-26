@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+label.logo img{
+    position: absolute;
+   width: 58px;
+   height: 62px;
+   margin-top: 6px;
+   margin-left: 30px;
+}
+label.logo{
+    color: #74797a;
+    font-size: 38px;
+    line-height: 80px;
+    padding: 0 45px;
+	padding-top: 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #413f43;
+    font-size: 19px;
+    padding: 0 40px;
+    border-radius: 3px;
+}
+a.active,a:hover{
+    background: #62d0de;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:rgb(69, 221, 241);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.menu
+{ 
+	height:300px;
+	background-color:#01bbd2;
+	margin-top: -10px;
+}
+
+.menu h1
+{
+	font-family: montserrat;
+	font-size: 60px;
+	color:#fff;
+    padding: 0 100px;
+	padding-top: 100px;
+    
+	
+}
+.menu p{
+    font-family: montserrat;
+	font-size: 22px;
+	color:#fff;
+    padding: 0 100px;
+	padding-top: 15px;
+}
+.content{
+	margin-top: -60px;
+    background-color: #62d0de;
+}
+
+.content h1{
+	font-family: montserrat;
+	font-size: 30px;
+    text-align: center;
+	color:#fff;
+    padding: 0 80px;
+	padding-top: 80px;
+    
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px 100px;
+    padding-top: 20px;
+    grid-column-gap: 1px;
+    grid-row-gap: 15px;
+}
+.item img{
+    width: 95%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.footer{
+	background-color:#323a45;
+    margin-top: -40px;
+}
+.footer h1
+{
+	font-family: montserrat;
+	font-size: 20px;
+	color:#fff;
+    padding: 0 120px;
+	padding-top: 20px;
+	text-align: center;
+}
+@media screen and (max-width: 1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}    
